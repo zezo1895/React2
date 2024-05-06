@@ -1,0 +1,143 @@
+.signup {
+  flex-direction: column;
+  
+}
+.signup .headsign{
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+}
+.Light .signup .headsign {
+
+
+  color: #000;
+
+}
+form.flex {
+  flex-direction: column;
+  gap: 1.3rem;
+
+}
+form.flex input {
+  height: 2rem;
+  border-radius: 3px;
+  padding: 6px 10px;
+  color: #000;
+  font-size: 1.1rem;
+  background-color: #fff;
+
+  transition: 0.2s;
+}
+.Light form.flex input:hover,
+.Light form.flex input:focus {
+  border: 5px soild teal;
+  box-shadow: 0px 0px 15px teal;
+  outline: none;
+}
+form.flex p {
+  font-size: 1.5rem;
+  color: #000;
+}
+form.flex button {
+  padding: 10px;
+  font-size: 1.3rem;
+  background-color: teal;
+  transition: 0.4s;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid teal;
+}
+form.flex button:active {
+  transform: scale(.9);
+  border: 5px soild teal;
+  box-shadow: 0px 0px 15px teal;
+  background-color: rgb(5, 199, 199);
+  
+  
+  animation-iteration-count: 1;
+  animation-fill-mode:backwards;
+}
+
+form.flex button:hover {
+  background-color: rgb(5, 199, 199);
+  border: 5px soild teal;
+  box-shadow: 0px 0px 15px teal;
+}
+form.flex p a {
+  color: teal;
+  text-decoration: underline;
+}
+/* =================================
+           Dark mood       
+==================================== */
+
+
+.Dark form.flex button  {
+  background-color: #9e4673;
+  border: 2px solid #9e4673;
+}
+
+.Dark form.flex button:focus ,.Dark form.flex button:hover ,form.flex input:hover,
+form.flex input:focus {
+  border: 5px soild #9e4673;
+  box-shadow: 0px 0px 15px #9e4673;
+  outline: none;
+}
+.Dark form.flex p a{
+  color: #9e4673;
+}
+.Dark form.flex p {
+  color: #fff;
+}
+
+/* =================================
+        toast      
+==================================== */
+
+ .toast {
+  display: flex;
+  position: fixed;
+  bottom:-20%;
+  left: 50%;
+  align-items: center;
+  transform: translateX(-50%);
+  background-color:  teal;
+
+  padding: 10px 20px;
+  border-radius: 5px;
+opacity: 1;
+  transition: opacity 0.5s;
+  box-shadow: 0 0 10px teal,0 0 40px teal,0 0 80px teal;
+  animation: show 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes show {
+  0%{
+    bottom: 0;
+
+  }
+  100%{
+    bottom: 20%;
+  }
+}
+
+ .toast i{
+  margin-right: 10px;
+
+width: 50px;
+height: 50px;
+border-radius: 50%;
+padding-top: 10px;
+  background-color: #fff;
+  color:teal ;
+}
+.Dark .toast{
+  background-color:  #9e4673;
+  box-shadow: 0 0 10px #9e4673,0 0 40px#9e4673,0 0 80px #9e4673;
+  animation: show 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.Dark .toast i{
+  color:#9e4673;
+}

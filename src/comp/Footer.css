@@ -1,0 +1,27 @@
+.myfooter footer{
+  background-color: #1b1b1b;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 18px;
+
+}
+.myfooter{
+  margin-bottom: 0 !important;
+}
+
+
+
+.myfooter .ali{
+  background-color: teal;
+}
+/* .ali.dark {
+  background-color: #9e4673;
+} */
+
+.myfooter .ali.dark{
+  background-color: #9e4673;
+}
+
+ 
+
+

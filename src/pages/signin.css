@@ -1,0 +1,102 @@
+.reset{
+  display: flex;
+  background-color: teal;
+  flex-direction: column;
+  width: 40%;
+  height: 30%;
+  position: fixed;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 40px teal;
+  transform: translateY(-800px);
+  transition: 1.2s ease-in-out;
+  padding: 0 10px;
+}
+.show-reset{
+  transform:translateY(0px);
+  
+  transition: 1.2s ease-in-out;
+  
+}
+.Dark form.reset{
+  background-color: #9e4673;
+  box-shadow: 0px 0px 40px #9e4673;
+}
+
+form.reset input{
+  width: 60%;
+  height: 2rem;
+  border-radius: 3px;
+  padding: 6px 10px;
+  color: #000;
+  font-size: 1.1rem;
+  background-color: #fff;
+  transition: .2s;
+}
+ form.reset input:hover,
+ form.flex input:focus {
+  border: 5px soild #fff;
+  box-shadow: 0px 0px 25px #fff;
+  transition: .2s;
+  outline: none;
+}
+.Dark form.reset input:hover,
+.Dark  form.flex input:focus{
+  border: 5px soild #313030;
+  box-shadow: 0px 0px 25px #313030;
+  transition: .2s;
+  outline: none;
+}
+form.reset button{
+  font-size: 20px;
+  padding:10px 25px ;
+  color: #000;
+  border-radius: 10px;
+  transition: .3s;
+  margin-top: 20px;
+}
+.Dark form.reset button{
+background-color:#313030 ;
+color: #fff;  
+}
+form.reset button:active{
+    box-shadow: 0px 0px 25px #fff;
+  
+  scale: .9;
+  transition: .3s;
+}
+.Dark form.reset button:active{
+  box-shadow: 0px 0px 25px #313030;
+}
+form.reset button:hover{
+  box-shadow: 0px 0px 25px #fff;
+}
+.Dark form.reset button:hover{
+  box-shadow: 0px 0px 25px #313030;
+}
+form.reset .close{
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  transition: .5s;
+  cursor: pointer;
+}
+form.reset .close:hover{
+  color: yellow;
+  transform: rotate(180deg);
+}
+form.reset p{
+  font-size: 20px;
+}
+@media(width<700px){
+.reset{
+  width: 80%;
+}
+form.reset input{
+  width: 90%;
+}
+
+}

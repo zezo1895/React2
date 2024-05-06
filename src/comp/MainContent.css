@@ -1,0 +1,19 @@
+main{
+  color: #1b1b1b;
+
+  height: calc(100vh - 125px);
+
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 50px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  text-align: center;
+}
+main.dark{
+  background-color: rgb(39, 39, 39);
+  color: #fff;
+}
